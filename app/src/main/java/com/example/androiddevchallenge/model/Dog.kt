@@ -1,3 +1,18 @@
+/*
+ * Copyright 2021 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package com.example.androiddevchallenge.model
 
 import android.os.Parcel
@@ -12,7 +27,7 @@ data class Dog(
     val imgResId: Int,
     var desc: String?
 ) : Parcelable {
-    
+
     constructor(parcel: Parcel) : this(
         parcel.readLong(),
         parcel.readString(),
@@ -112,5 +127,4 @@ val dogs = listOf(
         imgResId = R.drawable.dog_2,
         desc = "My name is BiLi . I am a Tan & White Female Mongrel and I was rescued by Inspectors. I am currently living in Hong Kong Centre, please come to see me and give me a home."
     )
-
 )
