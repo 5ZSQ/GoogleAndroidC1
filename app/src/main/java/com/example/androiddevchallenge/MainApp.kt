@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 The Android Open Source Project
+ * Copyright 2020 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,11 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.androiddevchallenge.ui.theme
 
-import androidx.compose.ui.graphics.Color
+package com.example.androiddevchallenge
 
-val purple200 = Color(0xFFFFEB3B)
-val purple500 = Color(0xFFFFC107)
-val purple700 = Color(0xFFFF9800)
-val teal200 = Color(0xFF2196F3)
+import androidx.activity.OnBackPressedDispatcher
+import androidx.compose.runtime.Composable
+
+@Composable
+fun MainApp(backDispatcher: OnBackPressedDispatcher) {
+    NavGraph()
+}
