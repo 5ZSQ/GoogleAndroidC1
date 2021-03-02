@@ -66,50 +66,50 @@ val dogs = listOf(
     Dog(
         id = 10000,
         name = "Apple",
-        birthday = "01/11/2017",
+        birthday = "21/01/2021",
         size = "34",
         imgResId = R.drawable.dog_1,
         desc = "My name is Apple . I am a Tan & White Female Mongrel and I was rescued by Inspectors. I am currently living in Hong Kong Centre, please come to see me and give me a home."
     ),
     Dog(
         id = 10001,
-        name = "Pan",
-        birthday = "01/11/2017",
+        name = "Momo",
+        birthday = "12/09/2020",
         size = "25",
-        imgResId = R.drawable.dog_1,
-        desc = "My name is Pan . I am a Tan & White Female Mongrel and I was rescued by Inspectors. I am currently living in Hong Kong Centre, please come to see me and give me a home."
+        imgResId = R.drawable.dog_2,
+        desc = "My name is Momo . I am a Grey Female Dachshund Hound Cross (Spayed) and I was rescued by Inspectors. I am currently living in Hong Kong Centre, please come to see me and give me a home."
     ),
     Dog(
         id = 10002,
-        name = "Bear",
-        birthday = "01/11/2017",
+        name = "Molly",
+        birthday = "11/06/2020",
         size = "11",
-        imgResId = R.drawable.dog_2,
-        desc = "My name is Bear . I am a Tan & White Female Mongrel and I was rescued by Inspectors. I am currently living in Hong Kong Centre, please come to see me and give me a home."
+        imgResId = R.drawable.dog_3,
+        desc = "My name is Molly . I am a Black & Tan Female Rottweiler Cross and I was rescued by Inspectors. I am currently living in Hong Kong Centre, please come to see me and give me a home."
     ),
     Dog(
         id = 10003,
-        name = "BiLi",
-        birthday = "01/11/2017",
+        name = "Lulu",
+        birthday = "20/07/2020",
         size = "22",
-        imgResId = R.drawable.dog_2,
-        desc = "My name is BiLi . I am a Tan & White Female Mongrel and I was rescued by Inspectors. I am currently living in Hong Kong Centre, please come to see me and give me a home."
+        imgResId = R.drawable.dog_4,
+        desc = "My name is Lulu . I am a Tan & White Female Mongrel and I was rescued by Inspectors. I am currently living in Hong Kong Centre, please come to see me and give me a home."
     ),
     Dog(
         id = 10004,
-        name = "Bear",
-        birthday = "01/11/2017",
+        name = "Sa Sa",
+        birthday = "20/06/2020",
         size = "11",
-        imgResId = R.drawable.dog_1,
-        desc = "My name is Bear . I am a Tan & White Female Mongrel and I was rescued by Inspectors. I am currently living in Hong Kong Centre, please come to see me and give me a home."
+        imgResId = R.drawable.dog_5,
+        desc = "My name is Sa Sa . I am a Tan & White Female Mongrel and I was rescued by Inspectors. I am currently living in Hong Kong Centre, please come to see me and give me a home."
     ),
     Dog(
         id = 10005,
-        name = "BiLi",
-        birthday = "01/11/2017",
+        name = "Ah Bo",
+        birthday = "18/03/2020",
         size = "22",
-        imgResId = R.drawable.dog_2,
-        desc = "My name is BiLi . I am a Tan & White Female Mongrel and I was rescued by Inspectors. I am currently living in Hong Kong Centre, please come to see me and give me a home."
+        imgResId = R.drawable.dog_6,
+        desc = "My name is Ah Bo . I am a Tan & White Female Mongrel and I was rescued by Inspectors. I am currently living in Hong Kong Centre, please come to see me and give me a home."
     ),
     Dog(
         id = 10006,
@@ -125,6 +125,38 @@ val dogs = listOf(
         birthday = "01/11/2017",
         size = "22",
         imgResId = R.drawable.dog_2,
+        desc = "My name is BiLi . I am a Tan & White Female Mongrel and I was rescued by Inspectors. I am currently living in Hong Kong Centre, please come to see me and give me a home."
+    ),
+    Dog(
+        id = 10008,
+        name = "BiLi",
+        birthday = "01/11/2017",
+        size = "22",
+        imgResId = R.drawable.dog_3,
+        desc = "My name is BiLi . I am a Tan & White Female Mongrel and I was rescued by Inspectors. I am currently living in Hong Kong Centre, please come to see me and give me a home."
+    ),
+    Dog(
+        id = 10009,
+        name = "BiLi",
+        birthday = "01/11/2017",
+        size = "22",
+        imgResId = R.drawable.dog_4,
+        desc = "My name is BiLi . I am a Tan & White Female Mongrel and I was rescued by Inspectors. I am currently living in Hong Kong Centre, please come to see me and give me a home."
+    ),
+    Dog(
+        id = 10010,
+        name = "BiLi",
+        birthday = "01/11/2017",
+        size = "22",
+        imgResId = R.drawable.dog_5,
+        desc = "My name is BiLi . I am a Tan & White Female Mongrel and I was rescued by Inspectors. I am currently living in Hong Kong Centre, please come to see me and give me a home."
+    ),
+    Dog(
+        id = 10011,
+        name = "BiLi",
+        birthday = "01/11/2017",
+        size = "22",
+        imgResId = R.drawable.dog_6,
         desc = "My name is BiLi . I am a Tan & White Female Mongrel and I was rescued by Inspectors. I am currently living in Hong Kong Centre, please come to see me and give me a home."
     )
 )

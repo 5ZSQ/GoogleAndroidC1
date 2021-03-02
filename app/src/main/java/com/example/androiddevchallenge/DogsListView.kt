@@ -114,8 +114,8 @@ fun dogCard(dog: Dog, selectDog: (Dog) -> Unit) {
 
         Column(
             modifier = Modifier
-                .padding(16.dp)
                 .clickable(onClick = { selectDog(dog) })
+                .padding(start = 8.dp, top = 12.dp, end = 8.dp, bottom = 12.dp)
                 .fillMaxWidth()
         ) {
             val imageModifier = Modifier

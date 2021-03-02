@@ -15,12 +15,14 @@
  */
 package com.example.androiddevchallenge
 
+import android.widget.Toast
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.Button
 import androidx.compose.material.Icon
 import androidx.compose.material.IconButton
 import androidx.compose.material.LocalContentColor
@@ -32,9 +34,12 @@ import androidx.compose.material.TopAppBar
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.ImageBitmap
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.imageResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -48,7 +53,6 @@ import com.example.androiddevchallenge.ui.theme.MyTheme
 @Composable
 fun DogDetailView(dog: Dog, upPress: () -> Unit) {
     MyTheme() {
-
         Scaffold(
             topBar = {
                 TopAppBar(
@@ -80,6 +84,8 @@ fun dogDetailCard(dog: Dog) {
     Surface(color = MaterialTheme.colors.background) {
 
         val image = ImageBitmap.imageResource(dog.imgResId)
+        val enable = remember { mutableStateOf(true) }
+        val context = LocalContext.current
 
         MaterialTheme {
             val typography = MaterialTheme.typography
@@ -87,16 +93,14 @@ fun dogDetailCard(dog: Dog) {
             Column(
                 modifier = Modifier
                     .padding(16.dp)
-                    .clickable(onClick = {})
+                    .fillMaxHeight()
                     .fillMaxWidth()
             ) {
                 val imageModifier = Modifier
                     .fillMaxWidth()
                     .clip(shape = RoundedCornerShape(8.dp))
                     .padding(3.dp)
-
                 Image(bitmap = image, contentDescription = dog.name, modifier = imageModifier)
-
                 Text(
                     text = dog.name!!.toUpperCase(),
                     color = MaterialTheme.colors.primary,
@@ -107,15 +111,24 @@ fun dogDetailCard(dog: Dog) {
                             bottom = 3.dp
                         )
                 )
-
-                Text(
-                    "No. " + dog.id,
-                    style = typography.body2
-                )
-                Text(
-                    dog.desc!!,
-                    maxLines = 2, style = typography.body2
-                )
+                Text("No. " + dog.id, style = typography.body2)
+                Text(dog.desc!!, maxLines = 10, style = typography.body2)
+                Button(
+                    enabled = enable.value,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(30.dp),
+                    onClick = {
+                        enable.value = false
+                        Toast.makeText(
+                            context.applicationContext,
+                            "Congratulations! " + dog.name + " was adopted by you! ",
+                            Toast.LENGTH_LONG
+                        ).show()
+                    }
+                ) {
+                    Text(text = "Adopt")
+                }
             }
         }
     }
